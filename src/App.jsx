@@ -6,7 +6,7 @@ import Header from './pages/Header'
 
 function App() {
   return (
-    <div className="p-8 bg-indigo-200 min-h-screen">
+    <div className="p-8 bg-red-50 bg-[url(./assets/tritonlogo.png)] min-h-screen">
       <Header />
       <Routes>
         <Route path="/" element={<Questions />} />
@@ -17,3 +17,7 @@ function App() {
 }
 
 export default App
+
+/**
+ * bg-[url(./assets/tritonlogo.png)]
+ */
