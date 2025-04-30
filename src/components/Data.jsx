@@ -16,19 +16,14 @@ const Data = [
     "Had to attend disciplinary meetings due to dorm misbehavior?",
 
     /** Dining hall questions */
+    "Sold dining dollars?",
     "Used up all your dining dollars before the school year ended?",
     "Stolen dishes and utensils from a dining hall?",
     "Thrown dishes and utensils from a dining hall in the trash?",
     "Stolen Triton2Go boxes for dining dollars?",
-    
-    /** Beach related questions */
-    "Gone to a bonfire?",
-    "Gotten drunk at a bonfire?",
-    "Gotten high at a bonfire?",
-    "Visited Blacks Beach nude?",
 
     /** Class related questions */
-    "Did not attend a single lecture for one of your classes?",
+    "Did not attend a single lecture for a class?",
     "Been drunk or high in lecture?",
     "Been drunk or high during a midterm/final?",
     "Cheated on a midterm/final?",
@@ -40,13 +35,32 @@ const Data = [
     "Pulled an all nighter in a lecture hall?",
     "Had sex with your TA?",
     "Had sex with your professor?",
+
+    /** Event related questions */
+    "Participated in an undie run?",
+    "Been to Sun God?",
+    "Been drunk/high at Sun God?",
+    "Participated in the finals week scream?",
+    "Ever attended a basketball/volleyball/etc. game?",
+    "Paid a visit to CAPS?",
+
+    /** Beach related questions */
+    "Seen the bioluminescence at the beach?",
+    "Gone to a bonfire?",
+    "Gotten drunk at a bonfire?",
+    "Gotten high at a bonfire?",
+    "Seen someone nude at Black's Beach?",
+    "Been nude at Black's Beach?",
     
-    /** Club related questions */
-    "Went to PB on Wednesday?",
+    /** Bar related questions */
+    "Been to Welfare on Wednesdays?",
+    "Been to Pacific Beach?",
+    "Been kicked out of a bar?",
+
     /** Miscellaneous */    
     "Visited Fallen Star?",
     "Been to the tunnels underneath UCSD?",
-
+    "Had UCSDPD called on you?",
 ]
 
 const modularizedData = Data.map((item) => ({

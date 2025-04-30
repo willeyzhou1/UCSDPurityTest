@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import data from '../components/Data'
 import Question from '../components/Question'
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Questions({ setVisible }) {
     const navigate = new useNavigate();
@@ -18,12 +18,19 @@ export default function Questions({ setVisible }) {
         navigate('/submit', {state: checkedBoxes});
         console.log(checkedBoxes)
     }
+
+    function handleReset() {
+        document.querySelectorAll('input[type=checkbox]').forEach(box => box.checked = false);
+    }
     return (
         <div>
             <ol type='1' className='text-2xl font-bold text-black list-decimal pl-16 mt-16'>
                 {getQuestions(data)}
             </ol>
-            <button onClick={handleSubmit} className='border-black border-2 rounded-xl bg-white p-2 cursor-pointer mt-8 hover:opacity-70'>See my score!</button>
+            <div className='flex mt-10'>
+            <button onClick={handleSubmit} className='w-1/10 h-12 border-black border-2 rounded-xl bg-blue-400 p-2 cursor-pointer ml-8 mr-12 transition duration-300 hover:bg-sky-300'>See my score!</button>
+            <button onClick={handleReset} className='w-1/10 h-12 border-black border-2 rounded-xl bg-amber-500 p-2 cursor-pointer transition duration-300 hover:bg-yellow-500'>Reset checkboxes</button>
+            </div>
         </div>
     )
 }

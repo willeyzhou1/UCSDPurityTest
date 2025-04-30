@@ -12,7 +12,7 @@ function App() {
         <Header visible={visible}/>
         <Routes>
           <Route path="/" element={<Questions setVisible={setVisible}/>} />
-          <Route path="/submit" element={<Submit />} />
+          <Route path="/submit" element={<Submit setVisible={setVisible}/>} />
         </Routes>
     </div>
   )
