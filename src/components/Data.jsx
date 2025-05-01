@@ -1,19 +1,28 @@
 const Data = [
-    /** Geisel related questions */
+    /** Geisel/Price Center related questions */
     "Pulled an all nighter in Geisel?",
     "Cried in Geisel?",
     "Had sex with a MPS in Geisel?",
     "Masturbated in Geisel?",
     "Smoked in the woods next to Geisel?",
+    "Been drunk/high/etc. in Geisel?",
+    "Bought anything at the Library Walk Vendor Fair?", 
+    "Hooked up with somebody in a Price Center study room?",
     
     /** Dorm related questions */
     "Put up post-it notes on your dorm room window?",
     "Spent the night at a dorm room of a MPS (member of preferred sex)?",
     "Masturbated in your dorm while your roommate was not present?",
     "Masturbated in your dorm while your roommate was present?",
+    "Kicked out a roommate to do sexual acts?",
     "Been walked in on by your roommate?",
+    "Visited the Condom Concierge in UCSD?",
+    "Gotten drunk/high with your RA?",
     "Had an RA called on you?",
     "Had to attend disciplinary meetings due to dorm misbehavior?",
+    "Hosted dorm parties?",
+    "Have/had a traffic cone/random sign as dorm decoration?",  
+    "Had UCSDPD called on you?",
 
     /** Dining hall questions */
     "Sold dining dollars?",
@@ -21,46 +30,89 @@ const Data = [
     "Stolen dishes and utensils from a dining hall?",
     "Thrown dishes and utensils from a dining hall in the trash?",
     "Stolen Triton2Go boxes for dining dollars?",
+    "Stolen anything from the UCSD markets?",
 
     /** Class related questions */
+    "Switched your major more than once?",
+    "Taken more than 20 units?",
+    "Taken an easy GPA booster class?",
+    "Skipped out on lecture due to other students' awful hygiene?",
     "Did not attend a single lecture for a class?",
+    "Dropped a class because it was not podcasted?",
     "Been drunk or high in lecture?",
     "Been drunk or high during a midterm/final?",
     "Cheated on a midterm/final?",
+    "Missed a midterm/final?",
+    "Pulled an all nighter to cram for a final exam?",
+    "Pulled an all nighter in a lecture hall?",
     "Used ChatGPT on an assignment?",
     "Dropped a class?",
     "Failed a class?",
     "Faced expulsion due to low GPA?",
+    "Gotten an AI violation?",
     "Skipped out on filling out CAPES/SETS?",
-    "Pulled an all nighter in a lecture hall?",
+    "Written an awful CAPES/SETS for a professor?",
+    "Written an awful CAPES/SETS for a TA?",
+    "Dated a TA?",
     "Had sex with your TA?",
+    "Dated a professor?",
     "Had sex with your professor?",
+    "Had sex in a public area (lecture hall, conference room, etc.)?",
+    "Matched on a dating app with somebody in your class?",
+    "Hooked up with somebody in your class?",
+    "Not taken a shower for multiple days (especially if CS student)?",
 
-    /** Event related questions */
+
+    /** UCSD event related questions */
     "Participated in an undie run?",
+    "Dipped in the fountain next to Price Center during the undie run?",
     "Been to Sun God?",
     "Been drunk/high at Sun God?",
     "Participated in the finals week scream?",
     "Ever attended a basketball/volleyball/etc. game?",
+    "Been to a club meeting just to get free food?",
+    "Visited Fallen Star?",
+    "Climbed the Warren Bear?",
+    "Been to the tunnels underneath UCSD?",
     "Paid a visit to CAPS?",
+    "Participated in a campus protest?",
+    "Gone to Khosla's house during Halloween?",
+    "Gotten a parking ticket?",
+    "Parked on campus without paying for parking?",
+    "Spent 10+ minutes looking for parking in UCSD?",
+    "Been to a UCSD frat party?",
+    "Gotten wasted at a UCSD frat party?",
+    "Hooked up with somebody from a party?",
+    "Seen a raccoon on campus?",
+    "Rode a SPIN scooter tandem-bike style with another person?",
+    "Fell and ate shit riding a SPIN scooter?",
+    "Been stalked by a classmate?",
 
-    /** Beach related questions */
+    /** Beach related questions */  
+    "Gone to the beach past midnight?",
     "Seen the bioluminescence at the beach?",
+    "Gone surfing?",
     "Gone to a bonfire?",
     "Gotten drunk at a bonfire?",
     "Gotten high at a bonfire?",
     "Seen someone nude at Black's Beach?",
     "Been nude at Black's Beach?",
+    "Gone parasailing at Gliderport?",
+    "Been hiking in Gliderport?",
+    "Visited the Birch Aquarium?",
     
-    /** Bar related questions */
+    /** Non-UCSD related questions */
+    "Gone to UTC?",
     "Been to Welfare on Wednesdays?",
     "Been to Pacific Beach?",
     "Been kicked out of a bar?",
-
-    /** Miscellaneous */    
-    "Visited Fallen Star?",
-    "Been to the tunnels underneath UCSD?",
-    "Had UCSDPD called on you?",
+    "Been to Convoy?",
+    "Been to NOVA/SOMA SD?",
+    "Visited one of the strip clubs in Convoy?",
+    "Gone to a club in downtown SD?",
+    "Trolleyed all the way to Tijuana?",
+    "Been to Balboa Park/San Diego Zoo?",
+    "Gotten Tacos El Gordo?",
 ]
 
 const modularizedData = Data.map((item) => ({

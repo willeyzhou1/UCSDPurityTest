@@ -28,8 +28,8 @@ export default function Questions({ setVisible }) {
                 {getQuestions(data)}
             </ol>
             <div className='flex mt-10'>
-            <button onClick={handleSubmit} className='w-1/10 h-12 border-black border-2 rounded-xl bg-blue-400 p-2 cursor-pointer ml-8 mr-12 transition duration-300 hover:bg-sky-300'>See my score!</button>
-            <button onClick={handleReset} className='w-1/10 h-12 border-black border-2 rounded-xl bg-amber-500 p-2 cursor-pointer transition duration-300 hover:bg-yellow-500'>Reset checkboxes</button>
+            <button onClick={handleSubmit} className='w-54 h-12 border-black border-2 rounded-xl bg-blue-400 p-2 cursor-pointer ml-8 mr-12 transition duration-300 hover:bg-sky-300'>See my score!</button>
+            <button onClick={handleReset} className='w-54 h-12 border-black border-2 rounded-xl bg-amber-500 p-2 cursor-pointer transition duration-300 hover:bg-yellow-500'>Reset checkboxes</button>
             </div>
         </div>
     )
