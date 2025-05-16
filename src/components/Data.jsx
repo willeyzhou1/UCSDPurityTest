@@ -100,6 +100,7 @@ const Data = [
     "Gone parasailing at Gliderport?",
     "Been hiking in Gliderport?",
     "Visited the Birch Aquarium?",
+    "Seen Scrippshenge?",
     
     /** Non-UCSD related questions */
     "Gone to UTC?",
@@ -107,7 +108,6 @@ const Data = [
     "Been to Pacific Beach?",
     "Been kicked out of a bar?",
     "Been to Convoy?",
-    "Been to NOVA/SOMA SD?",
     "Visited one of the strip clubs in Convoy?",
     "Gone to a club in downtown SD?",
     "Trolleyed all the way to Tijuana?",
