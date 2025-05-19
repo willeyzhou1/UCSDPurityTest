@@ -19,10 +19,8 @@ export default function Questions({ setVisible }) {
         let checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
         const db = database;
         const time = Date.now();
-        const reference = ref(db, 'values/' + time)
-        set(reference, {
-            score:checkedBoxes
-        });
+        const reference = ref(db, `values/${time}`)
+        set(reference, checkedBoxes);
         navigate('/submit', {state: checkedBoxes});
         console.log(checkedBoxes)
     }
