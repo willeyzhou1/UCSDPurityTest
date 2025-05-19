@@ -2,6 +2,8 @@ import React from 'react'
 import data from '../components/Data'
 import Question from '../components/Question'
 import { useNavigate } from 'react-router-dom';
+import { database } from '../Firebase'
+import { ref, set, push } from "firebase/database";
 
 export default function Questions({ setVisible }) {
     const navigate = new useNavigate();
@@ -14,7 +16,13 @@ export default function Questions({ setVisible }) {
 
     function handleSubmit() {
         setVisible(false);
-        var checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
+        let checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
+        const db = database;
+        const time = Date.now();
+        const reference = ref(db, 'values/' + time)
+        set(reference, {
+            score:checkedBoxes
+        });
         navigate('/submit', {state: checkedBoxes});
         console.log(checkedBoxes)
     }
