@@ -18,8 +18,7 @@ export default function Questions({ setVisible }) {
         setVisible(false);
         let checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
         const db = database;
-        const time = Date.now();
-        const reference = ref(db, `values/${time}`)
+        const reference = push(ref(db, 'values'))
         set(reference, checkedBoxes);
         navigate('/submit', {state: checkedBoxes});
         console.log(checkedBoxes)
@@ -28,6 +27,7 @@ export default function Questions({ setVisible }) {
     function handleReset() {
         document.querySelectorAll('input[type=checkbox]').forEach(box => box.checked = false);
     }
+
     return (
         <div>
             <ol type='1' className='text-2xl font-bold text-black list-decimal pl-16 mt-16'>
