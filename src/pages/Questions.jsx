@@ -7,7 +7,7 @@ import { ref, set, push } from "firebase/database";
 
 export default function Questions({ setVisible }) {
     const navigate = new useNavigate();
-
+    let checkedBoxes = 100;
     const getQuestions = (data) => {
         return data.map((questionData, index) => (
             <Question key={index} question={questionData.question} />
@@ -16,7 +16,7 @@ export default function Questions({ setVisible }) {
 
     function handleSubmit() {
         setVisible(false);
-        let checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
+        checkedBoxes = 100 - document.querySelectorAll('input[type="checkbox"]:checked').length;
         const db = database;
         const reference = push(ref(db, 'values'))
         set(reference, checkedBoxes);

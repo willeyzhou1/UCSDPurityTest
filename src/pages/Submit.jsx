@@ -14,6 +14,7 @@ export default function Submit( { setVisible }) {
       navigate('/analytics');
       setVisible(false);
     }
+
     return (
         <div className='block'>
           <h1 className='flex justify-center text-4xl font-semibold'>Score:</h1>
