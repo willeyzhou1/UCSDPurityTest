@@ -6,7 +6,7 @@ import { database } from '../Firebase'
 import { ref, set, push } from "firebase/database";
 
 export default function Questions({ setVisible }) {
-    const navigate = new useNavigate();
+    const navigate = useNavigate();
     let checkedBoxes = 100;
     const getQuestions = (data) => {
         return data.map((questionData, index) => (

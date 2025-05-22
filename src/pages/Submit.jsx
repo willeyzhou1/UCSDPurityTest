@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 
 export default function Submit( { setVisible }) {
-    const location = new useLocation();
-    const navigate = new useNavigate();
+    const location = useLocation();
+    const navigate = useNavigate();
 
     function handlePlayClick() {
       navigate('/');

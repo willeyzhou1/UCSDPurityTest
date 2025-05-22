@@ -21,11 +21,3 @@ function App() {
 }
 
 export default App
-
-/**
- * bg-[url(./assets/tritonlogo.png)]
- */
-
-/**
- * use firebase to store data about responses
- */

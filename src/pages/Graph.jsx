@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate } from 'react-router-dom';
 import { Bar } from 'rough-viz';
 import { database } from '../Firebase';
 import { ref, onValue } from 'firebase/database';
 
-function Graph( setVisible ) {
+function Graph({ setVisible }) {
     const [values, setValues] = useState(new Array(10).fill(0));
-    const navigate = new useNavigate();
-    
+    const navigate = useNavigate();
+
     useEffect(() => {
         const db = database;
         const purityRef = ref(db, 'values');
